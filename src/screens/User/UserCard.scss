@@ -1,0 +1,27 @@
+.userCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    gap: 5px;
+    padding-left: 25px;
+    width: 19.5%;
+    height: 20.5vh;
+}
+
+.userImg img {
+    width: 18%;
+    height: 6vh;
+}
+
+.userDesc {
+   color: #545F7D;
+   font-size: 0.8rem;
+   font-weight: 500;
+}
+
+.userCount {
+   color: #213F7D;
+   font-size: 1.2rem;
+   font-weight: 700;
+}

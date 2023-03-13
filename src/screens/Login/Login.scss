@@ -1,0 +1,146 @@
+.loginContainer {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-areas: 
+      'leftSide rightSide'
+      'leftSide rightSide'
+    ;
+    grid-template-columns: 1fr 1fr;
+    @media screen and (max-width: 767px) {
+      grid-template-areas: 
+      'leftSide'
+      'rightSide'
+    ;
+    grid-template-columns: 1fr;
+    }
+}
+
+.left {
+   grid-area: leftSide;
+   width: 100%;
+   background-color: rgb(248, 247, 247);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   @media screen and (max-width: 767px) {
+    height: 65vh;
+   } 
+}
+
+.right {
+    grid-area: rightSide;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 767px) {
+      height: 78vh;
+    }
+}
+
+.leftItems {
+  display: grid;
+  gap: 80px;
+  grid-template-areas: 
+    'logo logo'
+    'imgField imgField'
+  ;
+  grid-template-columns: 1fr;
+}
+
+.loginImg {
+  grid-area: imgField;
+  max-height: 50vh;
+  padding-right: 10px;
+  @media screen and (max-width: 961px) and (min-width: 768px) {
+    height: 30vh;
+  }
+  @media screen and (max-width: 425px) {
+    max-height: 28vh;
+  }
+  @media screen and (max-width: 767px) and (min-width: 426px) {
+    max-height: 35vh;
+  }
+}
+
+.loginLogo {
+  grid-area: logo;
+}
+
+.top-text {
+  display: flex;
+  flex-direction: column;
+  grid-area: topText;
+  line-height: 5px;
+  margin-bottom: 40px;
+}
+
+.top-text h2 {
+  color: #213F7D;
+  font-size: 1.7rem;
+}
+
+.right-grid {
+  display: grid;
+  grid-template-areas: 
+    'topText topText'
+    'textField textField'
+    'textField textField'
+    'btmText btmText'
+    'button button'
+  ;
+  grid-template-columns: 1fr;
+  @media screen and (max-width: 425px) {
+    width: 80%;
+    grid-template-areas: 
+    'topText'
+    'textField'
+    'textField'
+    'btmText'
+    'button'
+  ;
+  grid-template-columns: 1fr;
+  }
+  @media screen and (max-width: 767px) and (min-width: 426px) {
+    width: 70%;
+  }
+}
+
+.right h4 {
+  color: #39CDCC;
+  grid-area: btmText;
+  font-weight: 500;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.top-text p {
+  color: #545F7D;
+}
+
+.loginBtn {
+  width: 100%;
+  height: 8vh;
+  margin-top: 12px;
+  grid-area: button;
+  background-color: #39CDCC;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+.loginBtn:hover {
+  background-color: #61dddd;
+  cursor: pointer;
+}
+
+.text-field {
+  display: flex;
+  grid-area: textField;
+  flex-direction: column;
+  gap: 20px;
+}

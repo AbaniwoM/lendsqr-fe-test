@@ -1,0 +1,44 @@
+.sideContainer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 95px;
+}
+
+.sideContainer h5 {
+    color: #213F7D;
+    font-weight: 700;
+    padding-left: 25px;
+}
+
+.switch {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-left: 25px;
+}
+
+.switch h4 {
+    color: #213F7D;
+    font-weight: 600;
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    gap: 8px;
+}
+
+.sidebar-item:hover {
+   background-color: #39CDCC;
+   cursor: pointer;
+}
+
+.sidebar-item h4 {
+    color: #213F7D;
+    font-weight: 400;
+}
+
+.sidebar-icon {
+    color: #213F7D;
+}
