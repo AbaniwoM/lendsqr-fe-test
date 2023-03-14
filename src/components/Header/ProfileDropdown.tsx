@@ -3,27 +3,11 @@ import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { useNavigate } from "react-router-dom";
-import { makeStyles } from "@material-ui/core";
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-
-const useStyles = makeStyles((theme) => ({
-  menu: {
-    [theme.breakpoints.down("sm")]: {
-    //   marginLeft: "18px",
-      marginTop: "5px",
-      maxWidth: "65%",
-    },
-    [theme.breakpoints.between("sm", "md")]: {
-      marginLeft: "80px",
-      marginTop: "5px",
-    }
-  },
-}));
 
 export default function ProfileDropdown() {
   const navigate = useNavigate();
   const [anchorEl, setAnchorEl] = React.useState(null);
-  const classes = useStyles();
   const open = Boolean(anchorEl);
   const handleClick = (event:any) => {
     setAnchorEl(event.currentTarget);
