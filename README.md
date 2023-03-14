@@ -2,7 +2,7 @@
 
 ## Demo link
 
-You can view the live project [here](http://localhost:3000)
+You can view the live project [here](https://michael-abaniwo-lendsqr-fe-test.netlify.app/)
 
 ## About The App
 
