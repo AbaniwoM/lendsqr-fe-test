@@ -18,7 +18,8 @@ Download or clone the repository
 
 run `npm install` to install all packages used.
 
-Run `npm start` to start the app in the development mode.\
+Run `npm start` to start the app in the development mode.
+
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## React Testing

@@ -78,7 +78,10 @@ const DetailsTable = () => {
   }, [id]);
 
   return (
-    <div style={{ color: "#213F7D", marginTop: "15px", fontSize: "1.2rem", marginLeft: "15px", fontWeight: "500"}}>User Details</div>
+    <div style={{ color: "#213F7D", marginTop: "15px", fontSize: "1.2rem", marginLeft: "15px", fontWeight: "500"}}>
+        User Details
+        {/* <a href="https://www.flaticon.com/free-icons/young" title="young icons">Young icons created by Muhammad_Usman - Flaticon</a>  */}
+    </div>
   )
 }
 
