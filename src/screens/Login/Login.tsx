@@ -2,6 +2,7 @@ import React from 'react';
 import Logo from '../../components/Logo/Logo';
 import TextField from '@mui/material/TextField';
 import "./Login.scss";
+import { useNavigate } from "react-router-dom";
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import InputLabel from '@mui/material/InputLabel';
@@ -19,6 +20,8 @@ const Login = () => {
   const handleMouseDownPassword = (event: React.MouseEvent<HTMLButtonElement>) => {
     event.preventDefault();
   };
+
+  const navigate = useNavigate();
 
   return (
     <div className="loginContainer">
@@ -67,7 +70,7 @@ const Login = () => {
           </FormControl>
           </div>
           <h4>FORGOT PASSWORD?</h4>
-          <button className="loginBtn">LOG IN</button>
+          <button className="loginBtn" onClick={() => navigate("/dashboard")}>LOG IN</button>
         </div>
         </div>
     </div>

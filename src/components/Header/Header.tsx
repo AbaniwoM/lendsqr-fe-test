@@ -3,11 +3,12 @@ import Logo from '../Logo/Logo';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import NotificationsOutlinedIcon from '@mui/icons-material/NotificationsOutlined';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import "./Header.scss";
+import ProfileDropdown from './ProfileDropdown';
+import Hamburger from './Hamburger';
 
 const Header = () => {
-  return (
+    return (
     <div className="headerContainer">
         <div className="logo">
             <Logo />
@@ -22,10 +23,13 @@ const Header = () => {
             <h4>Docs</h4>
             <NotificationsOutlinedIcon />
             <AccountCircleOutlinedIcon />
-            <div className="userName">Michael</div>
+            <div className="userName">User</div>
             <div className="drop-down">
-                <ArrowDropDownIcon />
+                <ProfileDropdown />
             </div>
+        </div>
+        <div className="hamburger">
+            <Hamburger />
         </div>
     </div>
   )

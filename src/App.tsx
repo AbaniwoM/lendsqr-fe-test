@@ -10,6 +10,7 @@ import User from './screens/User/User';
 import UserDetails from './screens/UserDetails/UserDetails';
 
 const App = () => {
+
   return (
     <div className="App">
       <Router>

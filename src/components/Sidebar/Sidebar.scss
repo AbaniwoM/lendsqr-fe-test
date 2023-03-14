@@ -2,12 +2,24 @@
     display: flex;
     flex-direction: column;
     padding-top: 95px;
+    @media screen and (max-width: 425px) {
+        gap: 20px;
+    }
+    @media screen and (max-width: 768px) and (min-width: 426px) {
+        gap: 20px;
+    }
 }
 
 .sideContainer h5 {
     color: #213F7D;
     font-weight: 700;
     padding-left: 25px;
+    @media screen and (max-width: 425px) {
+        display: none;
+    }
+    @media screen and (max-width: 768px) and (min-width: 426px) {
+        display: none;
+    }
 }
 
 .switch {
@@ -20,6 +32,12 @@
 .switch h4 {
     color: #213F7D;
     font-weight: 600;
+    @media screen and (max-width: 425px) {
+        display: none;
+    }
+    @media screen and (max-width: 768px) and (min-width: 426px) {
+        display: none;
+    }
 }
 
 .sidebar-item {
@@ -37,6 +55,12 @@
 .sidebar-item h4 {
     color: #213F7D;
     font-weight: 400;
+    @media screen and (max-width: 425px) {
+        display: none;
+    }
+    @media screen and (max-width: 768px) and (min-width: 426px) {
+        display: none;
+    }
 }
 
 .sidebar-icon {

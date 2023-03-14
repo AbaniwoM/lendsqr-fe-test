@@ -32,4 +32,14 @@
 .user-cards {
     display: flex;
     gap: 22px;
+    @media screen and (max-width: 425px) {
+        overflow-x: auto;
+        gap: 40px;
+        width: 93%;
+    }
+    @media screen and (max-width: 768px) and (min-width: 426px) {
+        overflow-x: auto;
+        gap: 40px;
+        width: 93%;
+    }
 }

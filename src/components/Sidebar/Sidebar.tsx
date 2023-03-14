@@ -58,6 +58,56 @@ const Sidebar = () => {
           <div className="sidebar-icon"><PersonIcon /></div>
           <h4>Karma</h4>
        </div>
+       <h5>BUSINESSES</h5>
+       <div className="sidebar-item">
+          <div className="sidebar-icon"><RequestQuoteIcon /></div>
+          <h4>Organization</h4>
+       </div>
+       <div className="sidebar-item">
+          <div className="sidebar-icon"><RequestQuoteIcon /></div>
+          <h4>Loan Products</h4>
+       </div>
+       <div className="sidebar-item">
+          <div className="sidebar-icon"><RequestQuoteIcon /></div>
+          <h4>Savings Products</h4>
+       </div>
+       <div className="sidebar-item">
+          <div className="sidebar-icon"><RequestQuoteIcon /></div>
+          <h4>Fees and Charges</h4>
+       </div>
+       <div className="sidebar-item">
+          <div className="sidebar-icon"><RequestQuoteIcon /></div>
+          <h4>Transactions</h4>
+       </div>
+       <div className="sidebar-item">
+          <div className="sidebar-icon"><RequestQuoteIcon /></div>
+          <h4>Services</h4>
+       </div>
+       <div className="sidebar-item">
+          <div className="sidebar-icon"><RequestQuoteIcon /></div>
+          <h4>Service Account</h4>
+       </div>
+       <div className="sidebar-item">
+          <div className="sidebar-icon"><RequestQuoteIcon /></div>
+          <h4>Settlements</h4>
+       </div>
+       <div className="sidebar-item">
+          <div className="sidebar-icon"><RequestQuoteIcon /></div>
+          <h4>Reports</h4>
+       </div>
+       <h5>SETTINGS</h5>
+       <div className="sidebar-item">
+          <div className="sidebar-icon"><RequestQuoteIcon /></div>
+          <h4>Preferences</h4>
+       </div>
+       <div className="sidebar-item">
+          <div className="sidebar-icon"><RequestQuoteIcon /></div>
+          <h4>Fees and Pricing</h4>
+       </div>
+       <div className="sidebar-item">
+          <div className="sidebar-icon"><RequestQuoteIcon /></div>
+          <h4>Audit Logs</h4>
+       </div>
     </div>
   )
 }

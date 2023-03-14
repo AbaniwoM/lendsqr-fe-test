@@ -11,6 +11,14 @@
     ;
     grid-template-rows: 1fr 2fr 1fr;
     box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+    @media screen and (max-width: 425px) {
+        padding-top: 25px;
+        height: 8vh;
+    }
+    @media screen and (max-width: 768px) and (min-width: 426px) {
+        padding-top: 22px;
+        height: 8vh;
+    }
 }
 
 .logo {
@@ -32,6 +40,13 @@
     justify-content: center;
     align-items: center;
     grid-area: details;
+    color: #213F7D;
+    @media screen and (max-width: 425px) {
+        display: none;
+    }
+    @media screen and (max-width: 768px) and (min-width: 426px) {
+        display: none;
+    }
 }
 
 .details h4 {
@@ -53,6 +68,11 @@
     width: 50%;
     color: #545F7D;
     outline: none;
+    @media screen and (max-width: 425px) {
+        padding: 0px 0px 0px 15px;
+        width: 65%;
+        margin-left: 20px;
+    }
 }
 
 .search button {
@@ -71,4 +91,15 @@
 
 .drop-down {
     cursor: pointer;
+}
+
+.hamburger {
+    display: none;
+    @media screen and (max-width: 425px) {
+        display: block;
+        margin-right: 15px;
+    }
+    @media screen and (max-width: 768px) and (min-width: 426px) {
+        display: block;
+    }
 }

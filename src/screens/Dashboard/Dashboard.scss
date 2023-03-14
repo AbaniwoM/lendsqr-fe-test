@@ -23,4 +23,13 @@
     padding-top: 120px;
     padding-left: 60px;
     background-color: rgb(248, 247, 247);
+    @media screen and (max-width: 425px) {
+        padding-left: 20px;
+    }
+    @media screen and (max-width: 768px) and (min-width: 426px) {
+        padding-left: 20px;
+    }
+    @media screen and (max-width: 1023px) and (min-width: 769px) {
+        padding-left: 20px;
+    }
 }

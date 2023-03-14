@@ -115,10 +115,11 @@
 
 import React, { useEffect, useState } from "react";
 import "./UserTable.scss";
-import FilterListIcon from '@mui/icons-material/FilterList';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
+import FilterContent from "../../components/FilterContent/FilterContent"
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
+import MoreIcon from "./MoreIcon";
+
 
 const renderData = (data) => {
   return (
@@ -130,9 +131,9 @@ const renderData = (data) => {
                 <td className="table-row">{item.email}</td>
                 <td className="table-row">{item.phoneNumber}</td>
                 <td className="table-row">{item.createdAt}</td>
-                <td className="table-row">
+                <td className="table-row icon">
                    {item.lastActiveDate}
-                    <MoreVertIcon className="more-icon"/> 
+                    <MoreIcon className="more-icon"/> 
                 </td>
             </tr>
         );
@@ -215,21 +216,21 @@ function PaginationComponent() {
     pageDecrementBtn = <li onClick={handlePrevbtn}> &hellip; </li>;
   }
 
-  const handleLoadMore = () => {
-    setitemsPerPage(itemsPerPage + 5);
-  };
+  // const handleLoadMore = () => {
+  //   setitemsPerPage(itemsPerPage + 5);
+  // };
 
   return (
     <div className="table-container">
       <div className="table">
       <div className="head-top">
-                     <div className="head">ORGANISATION <p><FilterListIcon /></p></div>
-                     <div className="head">USERNAME <p><FilterListIcon /></p></div>
-                     <div className="head">EMAIL <p><FilterListIcon /></p></div>
-                     <div className="head">PHONE NUMBER <p><FilterListIcon /></p></div>
-                     <div className="head">DATE JOINED <p><FilterListIcon /></p></div>
-                     <div className="head">STATUS <p><FilterListIcon /></p></div>
-                </div>
+        <div className="head">ORGANISATION <p><FilterContent /></p></div>
+        <div className="head">USERNAME <p><FilterContent /></p></div>
+        <div className="head">EMAIL <p><FilterContent /></p></div>
+        <div className="head">PHONE NUMBER <p><FilterContent /></p></div>
+        <div className="head">DATE JOINED <p><FilterContent /></p></div>
+        <div className="head">STATUS <p><FilterContent /></p></div>
+      </div>
       {renderData(currentItems)}
       <ul className="pageNumbers">
         <li>
