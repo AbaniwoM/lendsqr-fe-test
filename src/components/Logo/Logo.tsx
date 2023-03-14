@@ -5,7 +5,7 @@ const LogoImg = require("../Images/lendsqr.png");
 
 const Logo = () => {
   return (
-    <div className="logo">
+    <div className="logo" data-testid="logo-1">
         <img src={Union} alt="union_icon" className="unionImg"/>
         <img src={LogoImg} alt="lendsqr_logo" className="logoImg"/>
     </div>

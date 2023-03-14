@@ -9,7 +9,7 @@ import Hamburger from './Hamburger';
 
 const Header = () => {
     return (
-    <div className="headerContainer">
+    <div className="headerContainer" data-testid="header-1">
         <div className="logo">
             <Logo />
         </div>
@@ -28,7 +28,7 @@ const Header = () => {
                 <ProfileDropdown />
             </div>
         </div>
-        <div className="hamburger">
+        <div className="hamburger" data-testid="hamburger-1">
             <Hamburger />
         </div>
     </div>

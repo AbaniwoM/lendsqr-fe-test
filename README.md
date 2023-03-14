@@ -21,12 +21,15 @@ run `npm install` to install all packages used.
 Run `npm start` to start the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+## React Testing
+Testing is done with Jest (React Testing Library) in Typescript. Tests can be run with the command `npm run test`
+
 ## Approach
 
-SCSS and Material ui was adopted for styling with SCSS class naming style. Typescript was used to define the types of elements in files.
+SCSS and Material ui was adopted for styling with SCSS class naming convention. Typescript was used to define the types of elements in files.
 
 ## Status
-
+Completed. More updates to User Details Page to be made.
 ## Credits
 
 Contributor: Michael Abaniwo

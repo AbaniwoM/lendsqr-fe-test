@@ -70,7 +70,7 @@ const Login = () => {
           </FormControl>
           </div>
           <h4>FORGOT PASSWORD?</h4>
-          <button className="loginBtn" onClick={() => navigate("/dashboard")}>LOG IN</button>
+          <button className="loginBtn" onClick={() => navigate("/dashboard")} data-testid="login-1">LOG IN</button>
         </div>
         </div>
     </div>
