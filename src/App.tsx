@@ -5,8 +5,9 @@ import {
   Route,
 } from "react-router-dom";
 import LoginPage from "./screens/Login/Login";
-import Dashboard from './screens/Dashboard/Dashboard';
+// import Dashboard from './screens/Dashboard/Dashboard';
 import User from './screens/User/User';
+import Users from './screens/User/User';
 import UserDetails from './screens/UserDetails/UserDetails';
 
 const App = () => {
@@ -16,7 +17,7 @@ const App = () => {
       <Router>
         <RouterCover>
           <Route path="/" element={<LoginPage />} />
-          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/dashboard" element={<Users />} />
           <Route path="/users" element={<User />} />
           <Route path="/user-details" element={<UserDetails />} />
         </RouterCover>

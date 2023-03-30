@@ -66,7 +66,7 @@ export default function MoreIcon() {
           className={classes.menuContent}
         >
           <div onClick={() => navigate("/user-details")}>
-            <MenuItem >
+            <MenuItem>
                 <div style={{ display: "flex", color: "#545F7D", gap: "5px", fontSize: "1rem"}}><VisibilityIcon />View Details</div>
             </MenuItem>
           </div>
